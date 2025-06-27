@@ -1243,5 +1243,53 @@
         // 초기화
         initTest();
     </script>
+    <!-- 왼쪽 광고 -->
+<div class="ads-left">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+</div>
+
+<!-- 오른쪽 광고 -->
+<div class="ads-right">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+       data-ad-slot="0987654321"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+</div>
+
+<!-- AdSense 스크립트 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!-- CSS -->
+<style>
+.ads-left, .ads-right {
+  position: fixed;
+  top: 100px;
+  width: 160px; /* 또는 300px 등 광고 단위에 따라 조절 */
+  z-index: 999;
+}
+.ads-left {
+  left: 10px;
+}
+.ads-right {
+  right: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .ads-left, .ads-right {
+    display: none; /* 모바일/태블릿에서는 광고 숨기기 */
+  }
+}
+</style>
+
 </body>
 </html>
